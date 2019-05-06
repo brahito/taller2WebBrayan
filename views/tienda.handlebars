@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+
+    </header>
+    <section>
+<div>
+<h1>Tienda</h1>
+
+    <h2>Filtros</h2>
+    <ul>
+        <li><a href="/tienda/Diseño">Diseño</a></li>
+        <li><a href="/tienda/Arquitectura">Arquitectura</a></li>
+    </ul>
+
+    {{#if esHardware}}
+        <label>Ingresa el rango de precio</label>
+        <input value="{{precio}}" class="input-rango" type="range" min="10000" max="30000">
+    {{/if}}
+
+    {{#if esSoftware}}
+        Categoría Arquitectura
+    {{/if}}
+
+    <ul>
+        {{#each productos}}
+            <li>
+                <img src="{{imagen}}" width="200px">
+                <h3>{{nombre}}</h3>
+                <p>{{precio}}</p>
+                <p>{{categoria}}</p>
+            </li>
+        {{/each}}
+    </ul>
+
+  
+    </div>
+    <div>
+
+    </div>
+
+    </section>
+      <script>
+        var rango = document.querySelector('.input-rango');
+        function buscarPorPrecio(){
+            console.log(rango.value);
+            location.href = '/tienda/Diseño?precio=' + rango.value;
+        }
+        rango.addEventListener('change', buscarPorPrecio);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+[
+    {
+        "nombre": "Pump it up LX",
+        "precio": 35000000,
+        "categoria": "Hardware",
+        "imagen": "LX.png"
+    },
+    {
+        "nombre": "Pump it up TX",
+        "precio": 26000000,
+        "categoria": "Hardware",
+        "imagen": "TX.png"
+    },
+    {
+        "nombre": "Pump it up CX",
+        "precio": 21000000,
+        "categoria": "Hardware",
+        "imagen": "CX.png"
+    },
+    {
+        "nombre": "Pump it up FX",
+        "precio": 17000000,
+        "categoria": "Hardware",
+        "imagen": "FX.png"
+    },
+    {
+        "nombre": "Pump it up version prime 2",
+        "precio": 1200000,
+        "categoria": "Software",
+        "imagen": "prime2.png"
+    },
+    {
+        "nombre": "Pump it up version prime",
+        "precio": 1080000,
+        "categoria": "Software",
+        "imagen": "prime.png"
+    },
+    {
+        "nombre": "Pump it up version fiesta 2",
+        "precio": 1000000,
+        "categoria": "Software",
+        "imagen": "fiesta2.png"
+    },
+    {
+        "nombre": "Pump it up version fiesta EX",
+        "precio": 905000,
+        "categoria": "Software",
+        "imagen": "fiestaEx.png"
+    },
+    {
+        "nombre": "Pump it up version Fiesta",
+        "precio": 804000,
+        "categoria": "Software",
+        "imagen": "fiesta.png"
+    },
+    {
+        "nombre": "Pump it up version NX-Absolute",
+        "precio": 800000,
+        "categoria": "Software",
+        "imagen": "NX-Absolute.png"
+    },
+    {
+        "nombre": "Pump it up version NX2-Next Xenesis",
+        "precio": 720000,
+        "categoria": "Software",
+        "imagen": "NX2.png"
+    },
+    {
+        "nombre": "Pump it up version NX",
+        "precio": 650000,
+        "categoria": "Software",
+        "imagen": "TX.png"
+    },
+    {
+        "nombre": "Pump it up version Zero",
+        "precio": 550000,
+        "categoria": "Software",
+        "imagen": "Zero.png"
+    },
+    {
+        "nombre": "Pump it up version Exceed 2",
+        "precio": 400000,
+        "categoria": "Software",
+        "imagen": "Exceed2.png"
+    },
+    {
+        "nombre": "Pump it up version Exceed",
+        "precio": 350000,
+        "categoria": "Software",
+        "imagen": "Exceed.png"
+    },
+    {
+        "nombre": "Camisa Pump it up prime 2",
+        "precio": 85000,
+        "categoria": "Accesorio",
+        "imagen": "camisa.png"
+    },
+    {
+        "nombre": "Camisa Pump it up",
+        "precio": 85000,
+        "categoria": "Accesorio",
+        "imagen": "camisa2.png"
+    },
+    {
+        "nombre": "Peluche flecha pump it up",
+        "precio": 40000,
+        "categoria": "Accesorio",
+        "imagen": "peluche.png"
+    },
+    {
+        "nombre": "Kit usuario pump it up",
+        "precio": 120000,
+        "categoria": "Accesorio",
+        "imagen": "kit.png"
+    },
+    {
+        "nombre": "Tarjeta usuario pump it up",
+        "precio": 25000,
+        "categoria": "Accesorio",
+        "imagen": ".png"
+    }
+    
+]
