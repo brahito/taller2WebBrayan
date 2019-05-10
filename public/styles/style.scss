@@ -54,6 +54,7 @@ h1,p,h3,h2,h4{
             &:hover{
                 text-decoration: underline;
             }
+           
         }
     }
     &__linea{
@@ -79,6 +80,17 @@ h1,p,h3,h2,h4{
     height: 450px;
     box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.30);
     border-radius: 10px;
+    & a{
+        text-decoration: none;
+        color: gray;
+    }
+    & h3,p{
+        margin: 5px 20px;
+    }
+
+    & img{
+        margin-left: 40px;
+    }
 }
 
 

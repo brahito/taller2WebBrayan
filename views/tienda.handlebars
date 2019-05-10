@@ -11,7 +11,7 @@
 
     <header class="encabezado">
 
-        <img src="/recursos/logo.png" class="encabezado__logo" alt="">
+        <img src="/recursos/hamburger.png" class="encabezado__logo" alt="" width="120px">
         <img src="/recursos/logo.png" class="encabezado__logo" alt="">
         <div class="encabezado__carro">
         <img src="/recursos/carrito.png" class="encabezado__carrito" alt="" height="60px">
@@ -25,9 +25,9 @@
         
     <h3>Ordenar</h3>
 
-    <p><a href="/tienda">Cronologicamente</a></p>
-    <p><a href="/tienda">Mayor precio</a></p>
-    <p><a href="/tienda">Menor precio</a></p>
+    <p><a href="/tienda/Cronologico">Cronologicamente</a></p>
+    <p><a href="/tienda/ascending">Mayor precio</a></p>
+    <p><a href="/tienda/descending">Menor precio</a></p>
 
     <h3>Categorias</h3>
 
@@ -35,6 +35,11 @@
     <p><a href="/tienda/Hardware">Hardware (4)</a></p>
     <p><a href="/tienda/Software">Software (11)</a></p>
     <p><a href="/tienda/Accesorio">Accesorios (5)</a></p>
+
+    <h3>Tienda</h3>
+    <p><a href="/tienda/Andamiro">Oficial Andamiro</a></p>
+    <p><a href="/tienda/Arcade">Arcade paradise</a></p>
+    <p><a href="/tienda/Peter">Peter Land</a></p>
 
     
         </article>
@@ -62,11 +67,11 @@
                     <img class="producto__imagen" src="/recursos/{{imagen}}" width="200px">
                     <h3 class="producto__nombre">{{nombre}}</h3>
                     <p class="producto__envio">Por Andamiro-Colombia</p>
-                    <p class="producto__precio">{{precio}}</p>
+                    <p class="producto__precio">$ {{precio}}</p>
                       
                 </a>
 
-                <button class="producto__carrito">Agregar al carrito</button>
+                <!--<button class="producto__carrito">Agregar al carrito</button>-->
 
             </li>
         {{/each}}
