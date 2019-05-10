@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+h1,p,h3,h2,h4{
+    font-family: 'eurostile';
+}
+@font-face{
+    font-family: 'eurostile';
+    src: url(/recursos/eurostile.TTF);
+}
+.encabezado{
+    background: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-around; 
+    color: white;
+    &__logo{
+
+    }
+    &__carro{
+
+    }
+    &__carrito{
+        margin-top: 10px;
+    }
+   
+}
+.carrito__num{
+    display: inherit;
+    margin-top: -61px;
+    margin-left: 15px;
+    color: red;
+    font-size: 30px;
+    font-family: 'eurostile';
+    text-align: center;
+
+}
+.seccion{
+    display: flex;
+    background: rgba(255,138,0,.2);
+    
+    &__filtros{
+        margin-left: 100px;  
+        & p{
+            color:gray;
+            margin:5px 0;
+        }
+        & h3{
+            margin: 10px 0;
+        }  
+        & a{
+            text-decoration: none;
+            color: gray;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__linea{
+        width: 3px;
+        background: lightgray;
+        max-height: 100%;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    &__productos{
+        margin-left: -50px;
+        
+    }
+}
+
+.producto{
+    display: inline-block;
+    width: 280px;
+    flex-direction: row;
+    background: white;
+    margin: 20px 40px;
+    height: 450px;
+    box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.30);
+    border-radius: 10px;
+}
+
+
+.pie{
+    background: rgba(255,138,0,.2);
+    height: 650px;
+    
+    &__contenido{
+    justify-content: center;
+    flex-direction: column;
+}
+    &__col1{
+        padding-top: 50px;
+        margin-right:0;
+        & p{
+            text-align: center;
+            
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        & img{
+            margin-top: 30px;
+            max-width: 300px;
+            margin-left:24%;
+
+        }
+    }
+    &__col2{
+        margin-top: 10px;
+
+        font-family: 'sourceSans';
+        & h1{
+            font-family: 'eurostile';
+            font-size: 30px;
+            text-align: center;
+            color: #81197f;
+        }
+        &__input{
+            display: flex;
+            justify-content: center;
+            & input{
+                margin-right: 10px;
+                margin-bottom: 15px;
+                width: 40%;
+
+            }
+        }
+       
+        &__inputXL textarea{
+            width: 90%;
+            height: 120px;
+            text-align: left;
+            margin-left: 25px;
+        }
+        &__boton{
+            width: 20%;
+            margin-left: 25px;
+        }
+    }
+    
+    &__linea{
+        margin-top: 25px;
+        height: 1px;
+        margin-left: 10%;
+        align-content: center;
+        width: 80%;
+        background: black;
+    }
+    &__derechos p{
+        color: black;
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
