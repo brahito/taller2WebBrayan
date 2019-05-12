@@ -93,6 +93,19 @@ h1, p, h3, h2, h4 {
   border-radius: 10px;
 }
 
+.producto a {
+  text-decoration: none;
+  color: gray;
+}
+
+.producto h3, .producto p {
+  margin: 5px 20px;
+}
+
+.producto img {
+  margin-left: 40px;
+}
+
 .pie {
   background: rgba(255, 138, 0, 0.2);
   height: 650px;
