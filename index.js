@@ -55,16 +55,18 @@ app.get('/tienda/:categoria?', function (request, response) {
     var options = {};
 
     if (request.query.sort) {
+        
         if(request.query.sort == 0){
             options = { sort: [["precio", "ascending"]] };
 
         }
+
         if(request.query.sort == 1){
             options = { sort: [["precio", "descending"]] };
+        }
 
         }
-        }
-    
+   
 
 
     var collection = db.collection('productos');

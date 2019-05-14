@@ -50,32 +50,29 @@
 
         <article class="seccion__productos">
 
-    {{#if esSoftware}}
-        
-    {{/if}}
-
-    {{#if esHardware}}
-       
-    {{/if}}
-
-    <ul>
+   
+      <div class="individual">
+    
        {{#each productos}}
-            <li class="producto">
-
+           
+              <div class="producto">
                 <a href="/tienda/producto/{{nombre}}">
-
+                <div class="producto__imagen">
                     <img class="producto__imagen" src="/recursos/{{imagen}}" width="200px">
+                </div>
+                    <div class="producto__letras">
                     <h3 class="producto__nombre">{{nombre}}</h3>
                     <p class="producto__envio">Por Andamiro-Colombia</p>
                     <p class="producto__precio">$ {{precio}}</p>
-                      
-                </a>
+                      </div>
 
+                </a>
+                </div>
                 <!--<button class="producto__carrito">Agregar al carrito</button>-->
 
-            </li>
         {{/each}}
-    </ul>
+    
+        </div>
         </article>
         
     </section>
@@ -85,7 +82,7 @@
               <p>Tel: 3156715134</p>
               <p>Correo: brayantino24@hotmail.com</p>
               <p>Calle71A#2c47, Cali, colombia</p>
-              <img src="recursos/andamiro-logo.png" alt="">
+              <!--<img src="/recursos/andamiro-logo.png" alt="">-->
             </div>
             <div class="pie__col2">
               <h1>Escribenos para saber mas</h1>

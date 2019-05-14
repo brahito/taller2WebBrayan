@@ -67,20 +67,19 @@ h1,p,h3,h2,h4{
         margin-right: 0;
     }
     &__productos{
-        margin-left: -50px;
         
     }
 }
 
 .producto{
-    display: inline-block;
     width: 280px;
-    flex-direction: row;
     background: white;
     margin: 20px 40px;
     height: 450px;
     box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.30);
     border-radius: 10px;
+    align-items: center;
+    position: relative;
     & a{
         text-decoration: none;
         color: gray;
@@ -91,10 +90,29 @@ h1,p,h3,h2,h4{
 
     & img{
         margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        margin-top: -75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    &__imagen{
+
+    }
+    &__letras{
+        margin-top: 300px;
     }
 }
 
+.individual{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 
+}
 .pie{
     background: rgba(255,138,0,.2);
     height: 650px;
