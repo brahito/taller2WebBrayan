@@ -40,7 +40,7 @@ app.get('/', function (request, response) {
     response.render('tienda', contexto);
 });
 
-app.get('/envios/:tienda?', function (request, response) {
+app.get('/envios/:envios?', function (request, response) {
     var query = {};
     if(request.params.envios) {
         query.envios = request.params.envios;
@@ -137,7 +137,7 @@ app.get('/carrito', function(req, res) {
     var contexto = {
        
     };
-    res.render('carrito',contexto);
+    res.render('carro',contexto);
 });
 
 app.get('/pago', function(req, res) {

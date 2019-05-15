@@ -1,5 +1,5 @@
 function paginaCargada(){
-
+   
     var rango = document.querySelector('.input-rango');
     function buscarPorPrecio(){
         console.log(rango.value);
@@ -16,14 +16,24 @@ function paginaCargada(){
 
     var carritoNum = document.querySelector('.carrito__num');
     var listaCarrito = document.querySelector('.carrito-desplegado__lista');
-
-    function actualizarCarrito(){
-        carritoNum.innerHTML = listaProductos.length;
     
-        //listaCarrito.innerHTML = '';
-        /*listaProductos.forEach(function(producto){
-            listaCarrito.innerHTML += '<img src="' + producto.imagen + '" width="50">' + producto.nombre;
-        });*/
+    
+    function actualizarCarrito(){
+        var suma = 0;
+        carritoNum.innerHTML = listaProductos.length;
+        if(listaCarrito !== null){
+        listaCarrito.innerHTML = '';
+        listaProductos.forEach(function(producto,index){
+            if(producto.precio.length !== null){
+                var temp = new String();
+                for (let i = 1; i < producto.precio.length; i++) {
+                    temp += producto.precio[i];
+                }
+                suma += parseInt(temp);
+            }
+            listaCarrito.innerHTML += '<li><img src="' + producto.imagen + '" width="50">' + '<p>'+producto.nombre+'</p>' + '<p>'+producto.precio+ '</p> '+ '<p>'+suma+ '</p> </li>';
+        });
+    }
     }
 
     actualizarCarrito();
@@ -31,14 +41,15 @@ function paginaCargada(){
     var botones = document.querySelectorAll('.producto__carrito');
     function recorrerBotones(boton){
         function agregarAlCarrito(){
-            var padre = boton.parentNode;
-            var nombre = padre.querySelector('.producto__nombre').innerText;
-            var precio = padre.querySelector('.producto__precio').innerText;
-            //var imagen = padre.querySelector('.producto__imagen').src;
+            //var padre = boton.parentNode;
+            var nombre = document.querySelector('.producto__nombre').innerText;
+            var precio = document.querySelector('.producto__precio').innerText;
+            var imagen = document.querySelector('.producto__imagen').src;
+          
             var producto = {
                 nombre: nombre,
                 precio: precio,
-               // imagen: imagen,
+                imagen: imagen,
             };
             
             listaProductos.push(producto);
@@ -69,6 +80,7 @@ function paginaCargada(){
         botonProductoDetalle.addEventListener('click', agregarAlCarritoDetalle);
     }
 
+  
     
 
 }
