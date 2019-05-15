@@ -31,7 +31,7 @@ function paginaCargada(){
                 }
                 suma += parseInt(temp);
             }
-            listaCarrito.innerHTML += '<li><img src="' + producto.imagen + '" width="50">' + '<p>'+producto.nombre+'</p>' + '<p>'+producto.precio+ '</p> '+ '<p>'+suma+ '</p> </li>';
+            listaCarrito.innerHTML += '<li class = "carrito__opciones"><img src="' + producto.imagen + '" width="200">' + '<p>'+producto.nombre+'</p>' + '<p>'+producto.precio+ '</p> '+ '<p>'+suma+ '</p> </li>';
         });
     }
     }

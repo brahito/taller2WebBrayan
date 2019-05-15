@@ -115,8 +115,14 @@ h1,p,h3,h2,h4{
         justify-content: center;
         
     }
+    &__img{
+        margin-top: 50px;
+        margin-right: 50px;
+    }
     &__datos{
         max-width: 500px;
+        margin: 20px;
+        margin-left: 50px;
     }
     & a{
         text-decoration: none;
@@ -127,10 +133,35 @@ h1,p,h3,h2,h4{
         height: 30px;
         background: rgb(0, 100, 220);
         border-radius: 20px;
-       
+        margin-left: 100px;
+        & p{
+            margin-top: 10px;
+        }
+     &:hover{
+         background: rgb(0, 150, 250);
+     }
+    }
+    &__info{
+        justify-content: center;
+        margin-left: 100px;
+        & h1{
+            margin-left: 50px;
+            font-size: 25px;
+        }
+        & p{
+            max-width: 1100px;
+            margin-left: 120px;
+        }
+    }
+    
+}
+.producto__carrito{
+
+    & p{
+        margin-left: 73px;
+        margin-top: 5px;
     }
 }
-
 .pie{
     background: rgba(255,138,0,.2);
     height: 650px;

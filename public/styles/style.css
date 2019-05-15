@@ -122,8 +122,15 @@ h1, p, h3, h2, h4 {
           justify-content: center;
 }
 
+.detalles__img {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
 .detalles__datos {
   max-width: 500px;
+  margin: 20px;
+  margin-left: 50px;
 }
 
 .detalles a {
@@ -136,6 +143,37 @@ h1, p, h3, h2, h4 {
   height: 30px;
   background: #0064dc;
   border-radius: 20px;
+  margin-left: 100px;
+}
+
+.detalles__boton p {
+  margin-top: 10px;
+}
+
+.detalles__boton:hover {
+  background: #0096fa;
+}
+
+.detalles__info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 100px;
+}
+
+.detalles__info h1 {
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.detalles__info p {
+  max-width: 1100px;
+  margin-left: 120px;
+}
+
+.producto__carrito p {
+  margin-left: 73px;
+  margin-top: 5px;
 }
 
 .pie {
