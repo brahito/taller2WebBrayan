@@ -40,22 +40,41 @@ app.get('/', function (request, response) {
     response.render('tienda', contexto);
 });
 
+app.get('/envios/:tienda?', function (request, response) {
+    var query = {};
+    if(request.params.envios) {
+        query.envios = request.params.envios;
+    }
+    var collection = db.collection('productos');
+    // Find some documents
+    collection.find(query)
+        .toArray(function (err, docs) {
+            assert.equal(err, null);
 
+            var contexto = {
+                productos: docs,
+                
+                envios: request.params.envios,
+                esAndamiro: request.params.envios == "Andamiro-Colombia"
+               
+            };
+            response.render('tienda', contexto);
+        });
+});
 
 app.get('/tienda/:categoria?', function (request, response) {
 
     console.log(request.query.precio);
 
     var query = {};
-    
     if (request.params.categoria) {
         query.categoria = request.params.categoria;
     }
     if (request.query.precio) {
         query.precio = { $lte: request.query.precio };
     }
-    if(request.query.envios) {
-        query.envios = request.query.envios;
+    if(request.params.tienda) {
+        query.tienda = request.params.tienda;
     }
 
     var options = {};
@@ -89,7 +108,7 @@ app.get('/tienda/:categoria?', function (request, response) {
                 productos: docs,
                 categoria: request.params.categoria,
                 precio: request.query.precio,
-                envios: request.params.envios,
+                tienda: request.params.tienda,
                 esAndamiro: request.params.tienda == "Andamiro-Colombia",
                 esSoftware: request.params.categoria == "Hardware",
                 esHardware: request.params.categoria == "Software",
