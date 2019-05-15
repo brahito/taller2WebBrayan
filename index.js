@@ -40,16 +40,22 @@ app.get('/', function (request, response) {
     response.render('tienda', contexto);
 });
 
+
+
 app.get('/tienda/:categoria?', function (request, response) {
 
     console.log(request.query.precio);
 
     var query = {};
+    
     if (request.params.categoria) {
         query.categoria = request.params.categoria;
     }
     if (request.query.precio) {
         query.precio = { $lte: request.query.precio };
+    }
+    if(request.query.envios) {
+        query.envios = request.query.envios;
     }
 
     var options = {};
@@ -63,6 +69,10 @@ app.get('/tienda/:categoria?', function (request, response) {
 
         if(request.query.sort == 1){
             options = { sort: [["precio", "descending"]] };
+        }
+
+        if(request.query.sort == 2){
+            options = {sort : [["tiempo", "ascending"]]};
         }
 
         }
@@ -79,7 +89,8 @@ app.get('/tienda/:categoria?', function (request, response) {
                 productos: docs,
                 categoria: request.params.categoria,
                 precio: request.query.precio,
-
+                envios: request.params.envios,
+                esAndamiro: request.params.tienda == "Andamiro-Colombia",
                 esSoftware: request.params.categoria == "Hardware",
                 esHardware: request.params.categoria == "Software",
                 esAccesorio: request.params.categoria == "Accesorio",
@@ -103,11 +114,19 @@ app.get('/tienda/producto/:nombre', function (req, res) {
         });
 });
 
-app.post('/login', function (request, response) {
-    // crear un archivo con la información del usuario
-    console.log(request.body);
-    // redireccionar a otra página
-    response.redirect('/bienvenida');
+app.get('/carrito', function(req, res) {
+    var contexto = {
+       
+    };
+    res.render('carrito',contexto);
+});
+
+app.get('/pago', function(req, res) {
+   
+    var contexto = {
+       
+    };
+    res.render('pago',contexto);
 });
 
 app.listen(3000);

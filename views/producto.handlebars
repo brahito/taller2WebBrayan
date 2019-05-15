@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    
+      <header class="encabezado">
+
+        <img src="/recursos/hamburger.png" class="encabezado__logo" alt="" width="120px">
+        <img src="/recursos/logo.png" class="encabezado__logo" alt="">
+        <div class="encabezado__carro">
+          <a href="/carrito">
+        <img src="/recursos/carrito.png" class="encabezado__carrito" alt="" height="60px">
+         </a>
+         <span class="carrito__num"> </span>
+         </div>
+    </header >
+    <section class="detalles">
+
+      <article class="detalles__visual">
+
+     <div class="detalles__img">
+ <img class="producto__imagen" src="/recursos/{{producto.imagen}}" width="350px">
+     </div>
+
+     <div class="detalles__datos">
+     <h1 class="producto__nombre">{{producto.nombre}}</h1>
+      <p class="producto__envio">Por {{producto.envios}}</p>
+      <p class="producto__precio">$ {{producto.precio}}</p>
+      <ul>
+        <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></li>
+         <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, officiis soluta rerum aut expedita fuga!</p></li>
+          <li><p>Lorem ipsum, dolor sit adipisicing elit.</p></li>
+          <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, illum unde. Perferendis nobis dolor, quod aliquam sunt atque!</p></li>
+      </ul>
+      <a href="" class="producto__carrito"><div class="detalles__boton"><p>Añadir al carrito</p></div></a>
+      
+     </div>
+      </article>
+
+      <article class="detalles__info">
+        <h1>Descripcion del producto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam repellat ea, culpa ut neque quia harum doloribus. Possimus tenetur enim doloribus, expedita repellat maxime officiis? Est sequi omnis voluptate!
+        Atque vitae blanditiis, maxime quo sapiente debitis neque pariatur nostrum! Quod aliquam provident dolores id dolore placeat, in dignissimos consectetur laborum perspiciatis necessitatibus, porro blanditiis debitis inventore, asperiores sint tempora?
+        Inventore ab et perspiciatis expedita itaque maxime deserunt incidunt quibusdam. Recusandae explicabo, quasi quisquam ullam non saepe nostrum consequatur unde aliquam obcaecati debitis quibusdam fuga a, vel laboriosam, ipsum tempora!
+        Fugit voluptatem laborum unde quis ullam fuga dicta, similique nihil odio eos totam, architecto dolorem, dignissimos atque! Suscipit odio facilis ipsum ipsa autem natus veniam quisquam quibusdam fuga, laudantium facere!
+        Ratione dolores placeat, sit quia numquam eveniet eaque suscipit repudiandae aspernatur odit officia, impedit provident. Adipisci debitis repellendus ipsum quod voluptatum velit veniam voluptate esse. Natus libero qui totam deleniti?
+        Omnis, in eos accusamus harum laborum nihil similique, neque nam commodi perferendis nisi et consectetur laboriosam cupiditate quis labore veniam possimus at recusandae ut magnam facere aliquam. Corporis, cupiditate omnis.
+        Eius fugit delectus consequuntur. Enim repellat cupiditate cum commodi quidem dolor nostrum porro velit, iste corporis culpa fugiat adipisci consequuntur aperiam! Magnam et minima aliquam, dolor accusantium perspiciatis sapiente nulla.
+        Ipsum inventore aliquam officia temporibus quisquam distinctio laborum minus sed harum? Quam veritatis error inventore. Quo nostrum debitis veniam iure dolorem, quisquam enim alias quasi maiores, incidunt id quos suscipit.
+        Voluptatibus, corrupti enim! Vel atque similique perferendis reprehenderit sed, cum facilis nostrum laboriosam consequatur quas autem facere voluptate quos veniam doloremque maxime debitis iste nam est temporibus dignissimos saepe aspernatur.
+        Recusandae eius atque, repudiandae, provident animi, consectetur illum voluptatem deserunt dolore dicta necessitatibus neque assumenda quidem rem esse nostrum quas voluptatum explicabo iste harum facere officia quasi dolorum ipsum. Inventore!</p>
+      </article>
+    </section>
+<script src="/scripts/tienda.js"></script>
 </body>
 </html>

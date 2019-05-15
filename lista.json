@@ -3,121 +3,162 @@
         "nombre": "Pump it up LX",
         "precio": 35000000,
         "categoria": "Hardware",
-        "imagen": "LX.png"
+        "imagen": "LX.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 14
     },
     {
         "nombre": "Pump it up TX",
         "precio": 26000000,
         "categoria": "Hardware",
-        "imagen": "TX.png"
+        "imagen": "TX.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 11
     },
     {
         "nombre": "Pump it up CX",
         "precio": 21000000,
         "categoria": "Hardware",
-        "imagen": "CX.png"
+        "imagen": "CX.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 7
     },
     {
         "nombre": "Pump it up FX",
         "precio": 17000000,
         "categoria": "Hardware",
-        "imagen": "FX.png"
+        "imagen": "FX.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 1
     },
     {
         "nombre": "Pump it up version prime 2",
         "precio": 1200000,
         "categoria": "Software",
-        "imagen": "prime2.png"
+        "imagen": "prime2.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 15
+        
     },
     {
         "nombre": "Pump it up version prime",
         "precio": 1080000,
         "categoria": "Software",
-        "imagen": "prime.png"
+        "imagen": "prime.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 13
     },
     {
         "nombre": "Pump it up version fiesta 2",
         "precio": 1000000,
         "categoria": "Software",
-        "imagen": "fiesta2.png"
+        "imagen": "fiesta2.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 12
     },
     {
         "nombre": "Pump it up version fiesta EX",
         "precio": 905000,
         "categoria": "Software",
-        "imagen": "fiestaEx.png"
+        "imagen": "fiestaEx.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 10
     },
     {
         "nombre": "Pump it up version Fiesta",
         "precio": 804000,
         "categoria": "Software",
-        "imagen": "fiesta.png"
+        "imagen": "fiesta.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 9
     },
     {
         "nombre": "Pump it up version NX-Absolute",
         "precio": 800000,
         "categoria": "Software",
-        "imagen": "NX-Absolute.png"
+        "imagen": "NX-Absolute.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 8
     },
     {
         "nombre": "Pump it up version NX2-Next Xenesis",
         "precio": 720000,
         "categoria": "Software",
-        "imagen": "NX2.png"
+        "imagen": "NX2.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 6
     },
     {
         "nombre": "Pump it up version NX",
         "precio": 650000,
         "categoria": "Software",
-        "imagen": "TX.png"
+        "imagen": "TX.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 5
     },
     {
         "nombre": "Pump it up version Zero",
         "precio": 550000,
         "categoria": "Software",
-        "imagen": "Zero.png"
+        "imagen": "Zero.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 4
     },
     {
         "nombre": "Pump it up version Exceed 2",
         "precio": 400000,
         "categoria": "Software",
-        "imagen": "Exceed2.png"
+        "imagen": "Exceed2.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 3
+        
     },
     {
         "nombre": "Pump it up version Exceed",
         "precio": 350000,
         "categoria": "Software",
-        "imagen": "Exceed.png"
+        "imagen": "Exceed.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 2
     },
     {
         "nombre": "Camisa Pump it up prime 2",
         "precio": 85000,
         "categoria": "Accesorio",
-        "imagen": "camisa.png"
+        "imagen": "camisa.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 16
     },
     {
         "nombre": "Camisa Pump it up",
         "precio": 85000,
         "categoria": "Accesorio",
-        "imagen": "camisa2.png"
+        "imagen": "camisa2.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 17
     },
     {
         "nombre": "Peluche flecha pump it up",
         "precio": 40000,
         "categoria": "Accesorio",
-        "imagen": "peluche.png"
+        "imagen": "peluche.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 18
     },
     {
         "nombre": "Kit usuario pump it up",
         "precio": 120000,
         "categoria": "Accesorio",
-        "imagen": "kit.png"
+        "imagen": "kit.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 19
     },
     {
         "nombre": "Tarjeta usuario pump it up",
         "precio": 25000,
         "categoria": "Accesorio",
-        "imagen": ".png"
-    }
-    
+        "imagen": "tarjeta.png",
+        "envios": "Andamiro-Colombia",
+        "tiempo": 20
+    } 
 ]
