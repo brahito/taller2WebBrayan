@@ -162,6 +162,16 @@ h1,p,h3,h2,h4{
         margin-top: 5px;
     }
 }
+.carrito-desplegado{
+    
+    &__lista{
+        & li{
+
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+}
 .pie{
     background: rgba(255,138,0,.2);
     height: 650px;
