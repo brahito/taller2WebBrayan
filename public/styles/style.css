@@ -176,9 +176,44 @@ h1, p, h3, h2, h4 {
   margin-top: 5px;
 }
 
+.carrito-desplegado__lista img {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
 .carrito-desplegado__lista li {
+  position: relative;
   display: inline-block;
   margin-left: 50px;
+  background: white;
+  height: 450px;
+  -webkit-box-shadow: 5px 5px 2.5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 2.5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.carrito-desplegado__lista h2 {
+  margin-top: 300px;
+  margin-left: 20px;
+}
+
+.carrito-desplegado__lista h3 {
+  margin-left: 20px;
+}
+
+.seccion__pagar {
+  margin-left: 50px;
+}
+
+.seccion__pagar h2 {
+  margin-left: 10px;
+}
+
+.seccion__pagar button {
+  margin-left: 20px;
 }
 
 .pie {
